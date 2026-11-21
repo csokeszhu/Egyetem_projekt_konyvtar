@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+data/kef.db
+data/sample/
+output/
+docs/_demo/
+~$*.docx
+docs/_toc_*.json
+# a gyökérben lévő tantárgyi PDF-ek (oktatói anyag) nem kerülnek fel
+/*.pdf

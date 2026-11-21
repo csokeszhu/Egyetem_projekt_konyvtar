@@ -1,0 +1,11 @@
+pandas>=2.2
+numpy>=1.26
+openpyxl>=3.1
+xlsxwriter>=3.2
+python-calamine>=0.2
+pytest>=8.0
+# csak a dokumentáció és a képernyőképek előállításához:
+python-docx>=1.1
+matplotlib>=3.8
+pillow>=10.0
+pymupdf>=1.24
