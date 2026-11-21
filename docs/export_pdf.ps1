@@ -1,13 +1,13 @@
 param([string]$work = (Join-Path ([IO.Path]::GetTempPath()) "kef_export"))
-# KEF_dokumentacio.docx -> KEF_dokumentacio.pdf (Microsoft Word kell hozza). A make_pdf.py hivja.
+# KEF_terv.docx -> KEF_terv.pdf (Microsoft Word kell hozza). A make_pdf.py hivja.
 # Onalloan:  powershell -NoProfile -ExecutionPolicy Bypass -File docs\export_pdf.ps1
 # (A fajl szandekosan ekezet nelkuli: a Windows PowerShell 5.1 a BOM nelkuli UTF-8 szkriptet
 #  ANSI-kent olvassa.)
 $log = Join-Path $work "export.log"
 New-Item -ItemType Directory -Force $work | Out-Null
 "start $(Get-Date -f HH:mm:ss)" | Out-File $log
-$src = Join-Path $PSScriptRoot "KEF_dokumentacio.docx"
-$dst = Join-Path $PSScriptRoot "KEF_dokumentacio.pdf"
+$src = Join-Path $PSScriptRoot "KEF_terv.docx"
+$dst = Join-Path $PSScriptRoot "KEF_terv.pdf"
 $tmp = Join-Path $work ("d{0}.docx" -f (Get-Random))
 $tmpPdf = $tmp -replace '\.docx$', '.pdf'
 Copy-Item $src $tmp
