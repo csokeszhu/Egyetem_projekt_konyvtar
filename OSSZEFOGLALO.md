@@ -94,7 +94,7 @@ amíg dolgozik (90 000 sornál kb. 40 mp).
 | **Tkinter** | a grafikus felület (a Pythonban alapból benne van) |
 | **SQLite** | kis adatbázis egy fájlban, nem kell hozzá szerver |
 | **pytest** | automatikus tesztek |
-| **python-docx**, **matplotlib** | a Word-terv és az ábrák legenerálása |
+| **matplotlib** | ábrák legenerálása |
 
 ## Tesztek – `tests/`
 26 teszt van. A Word-tervben leírt 10 teszteset (T01–T10) mind meg van írva tesztként is a
@@ -106,12 +106,6 @@ python -m pytest -q tests
 ```
 
 ## A Word-terv – `docs/`
-A tervet (`docs/KEF_terv.docx` és `.pdf`) szkript rakja össze:
-- `tools/screenshots.py` – végigkattintja a programot és képet csinál minden ablakról,
-- `docs/diagrams.py` – megrajzolja a funkciófát, a bejárhatósági gráfot és az ER-diagramot,
-- `docs/build_docs.py` – összerakja a Word-fájlt,
-- `docs/make_pdf.py` – Worddel PDF-et csinál belőle.
-
 A terv tartalma (ahogy a feladatban kérték):
 1. Feladatspecifikáció
 2. Funkcionális terv (funkciófa + a funkciók leírása)
