@@ -97,7 +97,7 @@ amíg dolgozik (90 000 sornál kb. 40 mp).
 | **matplotlib** | ábrák legenerálása |
 
 ## Tesztek – `tests/`
-26 teszt van. A Word-tervben leírt 10 teszteset (T01–T10) mind meg van írva tesztként is a
+26 teszt van. A tervben leírt 10 teszteset (T01–T10) mind meg van írva tesztként is a
 `tests/test_tesztesetek.py`-ban (pl. rossz jelszó, hiányzó oszlop, késedelmi díj számítása,
 szétbontás 3 fiókra). Futtatás:
 
@@ -105,7 +105,7 @@ szétbontás 3 fiókra). Futtatás:
 python -m pytest -q tests
 ```
 
-## A Word-terv – `docs/`
+## A terv
 A terv tartalma (ahogy a feladatban kérték):
 1. Feladatspecifikáció
 2. Funkcionális terv (funkciófa + a funkciók leírása)

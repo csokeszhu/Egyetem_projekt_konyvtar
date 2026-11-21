@@ -37,15 +37,13 @@ Első indításkor a program létrehozza a helyi adatbázist (`data/kef.db`) há
 
 ## Dokumentáció
 
-A terv: `docs/KEF_terv.docx` és `docs/KEF_terv.pdf`. A kód működésének rövid leírása:
-[OSSZEFOGLALO.md](OSSZEFOGLALO.md).
+A kód működésének rövid leírása: [OSSZEFOGLALO.md](OSSZEFOGLALO.md).
 
-Újragenerálás (képernyőképek → ábrák → Word → PDF):
+Képernyőképek és ábrák újragenerálása:
 
 ```powershell
 python tools/screenshots.py          # végigkattintja a GUI-t és képernyőképeket ment
 python docs/diagrams.py              # funkciófa, bejárhatósági gráf, ER-diagram, folyamatábra
-python docs/make_pdf.py              # docs/KEF_terv.docx + .pdf (Word kell hozzá)
 ```
 
 ## Felépítés
